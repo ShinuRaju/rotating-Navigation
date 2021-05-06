@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  background-color: #222;
+  padding: 0;
+  z-index: 2099;
+}
+
+nav {
+  position: absolute;
+  top: 70vh;
+  left: 0;
+  z-index: 1999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 4rem;
+  transition: transform 1s ease-in;
+}
+
+.hide {
+  transform: translateX(-500px);
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul li i {
+  margin-right: 1rem;
+}
+
+.container .tadaa {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 0 auto;
+  transform-origin: top left;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  padding: 1rem;
+}
+
+.container .tadaa div {
+  margin-bottom: 2rem;
+}
+
+.container .tadaa p {
+  text-indent: 50px;
+}
+
+.shownav {
+  transform: rotate(-20deg);
+  transform-origin: top left;
+}
+
+body .circle-container {
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+body .circle-container .circle {
+  background-color: #33c3f0;
+  opacity: 0.9;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  transition: transform 1s ease-in;
+  transform: rotate(-0deg);
+}
+
+body .circle-container .circle.rotate {
+  transform: rotate(-90deg);
+}
+
+body .circle-container .circle button {
+  position: absolute;
+  display: block;
+  top: 118px;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  padding: 0;
+  border: 0;
+}
+body .circle-container .circle button:first-child {
+  left: 54px;
+}
+
+body .circle-container .circle button:last-child {
+  right: 54px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 2rem auto;
+}
